@@ -1,3 +1,13 @@
+///////////////////////////////////////////////////////////////////////////
+Fork-Note: 
+This [main branch] reamins like the original project.
+To get the ROM that contains music, chose the branch Music-Integration. 
+The ROM is at the root.
+CarlosOlv.
+////////////////////////////////////////////////////////////////////////////
+
+
+
 # msx-mk
 Port of a famous 1990's fighting game to MSX2
 
