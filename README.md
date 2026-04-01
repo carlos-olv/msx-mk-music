@@ -1,6 +1,4 @@
 # Music-Integration Branch. 
-The ROM with music is at root and it is necessary to manually select the ROM type “ASCII16” in many emulators for now.
-
 
 # msx-mk
 Port of a famous 1990's fighting game to MSX2
