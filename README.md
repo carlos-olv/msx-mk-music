@@ -1,9 +1,7 @@
 # Fork-note:
 
 This [main] branch remains like the original albs-br project.
-To get the ROM that contains music, first choose the branch [Music-Integration]. 
-The ROM is at the root and it is necessary to manually select the ROM type “ASCII16” in many emulators for now.
-
+The music is in the branch [Music-Integration]. 
 CarlosOlv
 
 
