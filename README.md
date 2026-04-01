@@ -1,15 +1,11 @@
 ////////////////////////////////////////////////////////////
-
 Fork-Note:
 
-This [main branch] reamins like the original project.
-
+This [main] branch reamins like the original project.
 To get the ROM that contains music, chose the branch Music-Integration. 
-
 The ROM is at the root.
 
-CarlosOlv.
-
+CarlosOlv
 ////////////////////////////////////////////////////////////
 
 
