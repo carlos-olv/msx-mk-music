@@ -13,26 +13,36 @@ RePlayer_HookInstall:
 
     ld  hl,RePlayer_IRQ_Hook
     ld  (0FD9Ah+1),hl
-    ei                  ; ** Note: This exit can be improved using to avoid next BIOS unecessaries task. **
-    ret
-
-; ------------------------------------------------------------------
-; RePlayer_Tick_entry
-; ------------------------------------------------------------------
-RePlayer_Tick:
-    di
-    call RePlayer_Tick_entry
     ei
     ret
 
 ; ------------------------------------------------------------------
-; Replayer IRQ Routine
+; Replayer IRQ Hook Routine
 ; ------------------------------------------------------------------
 RePlayer_IRQ_Hook:
-    call RePlayer_Tick_entry
-	ld	 a,(Seg_P8000_SW_Mirror)
-	ld	 (7000h),a
-	ret
+    ; ld      a,(0007h)     ; Change color Border to see CPU consume of music routine
+    ; ld      c,a
+    ; inc     c
+    ; push    bc            ; Saves VDP Register Port to use it again
+    
+    ; ld	    b,15
+	; out	    (c),b		
+	; ld	    b,80h +7			
+	; out	    (c),b               
+  
+    call    RePlayer_Tick_entry 
+    
+	ld	    a,(Seg_P8000_SW_Mirror)     ; Restore Megarom bank
+	ld	    (7000h),a                   ;
+
+    ; pop       bc           ; Restore VDP Register Port 
+    ; ld	    b,3          ; Restore Border color
+	; out	    (c),b		
+	; ld	    b,80h +7			
+	; out	    (c),b               
+
+    xor     A           ; Set P Flag so BIOS Interruption don't execute all IO routines and return immediately to main program
+  	ret
 
 ; ------------------------------------------------------------------
 ; Replayer Init
