@@ -1,3 +1,7 @@
+# Music-Integration Branch. 
+The ROM with music is at root.
+
+
 # msx-mk
 Port of a famous 1990's fighting game to MSX2
 
