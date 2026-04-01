@@ -1,11 +1,10 @@
-Fork-Note:
+# Fork-note:
 
-This [main] branch reamins like the original project.
-To get the ROM that contains music, chose the branch Music-Integration. 
+This [main] branch remains like the original albs-br project.
+To get the ROM that contains music, first choose the branch [Music-Integration]. 
 The ROM is at the root.
 
 CarlosOlv
------------------------------------------------------------
 
 
 
