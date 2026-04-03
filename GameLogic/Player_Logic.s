@@ -766,7 +766,7 @@ UpdateHurtbox:
 Player_CheckScreenLimitRight:
     ; ----- check screen right limit
     ; if (x >= (255-width)) x = 255 - width
-    ld      a, 255
+    ld      a, 0
     sub     (ix + Player_Struct.Width)
     ld      b, a ; B = max_valid_X
     ld      a, (ix + Player_Struct.X)

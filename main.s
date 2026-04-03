@@ -367,7 +367,7 @@ Triple_Buffer_Step_2:
     ; --- update triple buffer vars
     xor     a
     ld      (TripleBuffer_Vars.Step), a
-    
+       
     jp      Triple_Buffer_Loop
 
 ;--------------------------------------------------------------------

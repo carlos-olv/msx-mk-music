@@ -378,5 +378,9 @@ MEGAROM_PAGE_REPLAYER_2: equ 25
     org	0x8000, 0xBFFF
 MEGAROM_PAGE_REPLAYER_3: equ 26
     INCBIN "Music/re-play.rom", 4000h *(26 -1), 4000h
+
+        org	0x8000, 0xBFFF
+MEGAROM_PAGE_REPLAYER_4: equ 27
+    INCBIN "Music/re-play.rom", 4000h *(27 -1), 4000h
   
-; ------------------------------------------------- Page 27 -------------------------------------------------
+; ------------------------------------------------- Page 28 -------------------------------------------------

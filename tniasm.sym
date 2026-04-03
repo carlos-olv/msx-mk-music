@@ -1201,6 +1201,7 @@ Scorpion_Kick_Left_Frame_2: equ 09FB2h ; last def. pass 3
 BIOS_CPCSUM: equ 0F93Dh ; last def. pass 3
 HKEYI: equ 0FD9Ah ; last def. pass 3
 Scorpion_Kick_Left_Frame_3: equ 0A14Bh ; last def. pass 3
+MEGAROM_PAGE_REPLAYER_4: equ 01Bh ; last def. pass 3
 BIOS_H_SCRE: equ 0FFC0h ; last def. pass 3
 Player_2_Vars.Animation_FirstFrame_Header: equ 0C20Fh ; last def. pass 3
 BIOS_GRPHED: equ 0FCA6h ; last def. pass 3
