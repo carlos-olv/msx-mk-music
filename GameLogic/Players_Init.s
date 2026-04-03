@@ -4,7 +4,7 @@ Players_Init:
     ld      ix, Player_1_Vars
     ld      hl, Scorpion_Stance_Left_Animation_Headers
     ld      b, 36 ;64 - (58/2)      ; X coord
-    ld      c, 100              ; Y coord
+    ld      c, 92                   ; Y coord
     ld      de, Scorpion_All_Animations_Left
     ld      a, SIDE.LEFT
     call    Player_Init
@@ -16,7 +16,7 @@ Players_Init:
     ld      ix, Player_2_Vars
     ld      hl, Subzero_Stance_Right_Animation_Headers
     ld      b, 162 ; 192 - (58/2)     ; X coord
-    ld      c, 100              ; Y coord
+    ld      c, 92                     ; Y coord
     ld      de, Subzero_All_Animations_Right
     ld      a, SIDE.RIGHT
     call    Player_Init

@@ -1,8 +1,8 @@
 
-#ram_watch   add     0xc021      -type word      -desc Total_Frames      -format dec
+#ram_watch   add     0xc021      -type word      -desc Total_Frames                     -format dec
 #ram_watch   add     0xc015      -type word      -desc Animation_CurrentFrame_List      -format hex
-#ram_watch   add     0xc023      -type byte      -desc Frame_Counter      -format dec
-#ram_watch   add     0xc002      -type byte      -desc Step      -format dec
+#ram_watch   add     0xc023      -type byte      -desc Frame_Counter                    -format dec
+#ram_watch   add     0xc002      -type byte      -desc Step                             -format dec
 
 #ram_watch   add     0xc006      -type word      -desc HMMM.S_X      -format dec
 #ram_watch   add     0xc008      -type word      -desc HMMM.S_Y      -format dec
@@ -12,30 +12,23 @@
 #ram_watch   add     0xc010      -type word      -desc HMMM.Lines     -format dec
 
 
-#ram_watch   add     0xc01f      -type byte      -desc P2_curr_frame     -format dec
-
-ram_watch   add     0xe30f      -type byte      -desc LastFps     -format dec
-
-ram_watch   add     0xe311      -type byte      -desc IsOPL4Available     -format dec
-
-ram_watch   add     0xe312      -type byte      -desc DebugMode     -format dec
-
-
-#ram_watch   add     0xc006      -type byte      -desc PlayerInput     -format hex
-
-
+#ram_watch   add     0xc01f      -type byte      -desc P2_curr_frame    -format dec
+ram_watch   add     0xe30f      -type byte       -desc LastFps           -format dec
+ram_watch   add     0xe311      -type byte       -desc IsOPL4Available   -format dec
+ram_watch   add     0xe312      -type byte       -desc DebugMode         -format dec
+#ram_watch   add     0xc006      -type byte      -desc PlayerInput      -format hex
 #ram_watch   add     0xc02f      -type byte      -desc P2.CurrFrame     -format dec
 
 
-ram_watch   add     0xc100      -type byte      -desc P1_X     -format dec
-ram_watch   add     0xc101      -type byte      -desc P1_Y     -format dec
-#ram_watch   add     0xc102      -type byte      -desc P1_width  -format dec
-ram_watch   add     0xc103      -type byte      -desc P1_height -format dec
-#ram_watch   add     0xc102      -type byte      -desc P1_Position     -format dec
-#ram_watch   add     0xc030      -type byte      -desc P1_IsBlocking   -format dec
-#ram_watch   add     0xc031      -type byte      -desc P1_IsCrouching  -format dec
-#ram_watch   add     0xc02f      -type byte      -desc P1_IsAnimating  -format dec
-#ram_watch   add     0xc02e      -type byte      -desc P1_IsGrounded     -format dec
+ram_watch   add     0xc100      -type byte      -desc P1_X              -format dec
+ram_watch   add     0xc101      -type byte      -desc P1_Y              -format dec
+#ram_watch   add     0xc102      -type byte     -desc P1_width          -format dec
+ram_watch   add     0xc103      -type byte      -desc P1_height         -format dec
+#ram_watch   add     0xc102      -type byte     -desc P1_Position       -format dec
+#ram_watch   add     0xc030      -type byte     -desc P1_IsBlocking     -format dec
+#ram_watch   add     0xc031      -type byte     -desc P1_IsCrouching    -format dec
+#ram_watch   add     0xc02f      -type byte     -desc P1_IsAnimating    -format dec
+#ram_watch   add     0xc02e      -type byte     -desc P1_IsGrounded     -format dec
 ram_watch   add     0xc116      -type byte      -desc P1_BG0_height     -format dec
 
 #ram_watch   add     0xc019      -type byte      -desc P1_HitB_X     -format dec
